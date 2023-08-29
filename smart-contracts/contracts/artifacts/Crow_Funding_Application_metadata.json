@@ -1,0 +1,388 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_deadLine",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "requestDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "receiverAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amountNeeded",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAmountReceived",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "noOfVotesAcquired",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "requestCounter",
+								"type": "uint256"
+							}
+						],
+						"indexed": false,
+						"internalType": "struct Crow_Funding_Application.CreateRequest",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"name": "logAnnouceWinner",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "requestDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "receiverAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amountNeeded",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAmountReceived",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "noOfVotesAcquired",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "requestCounter",
+								"type": "uint256"
+							}
+						],
+						"indexed": false,
+						"internalType": "struct Crow_Funding_Application.CreateRequest",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"name": "logRequestFlows",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "logTransactionFlows",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "logVoteFlows",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "contribute",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_requestDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountNeeded",
+						"type": "uint256"
+					}
+				],
+				"name": "createAmountRequest",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "requestDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "receiverAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amountNeeded",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAmountReceived",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "noOfVotesAcquired",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "requestCounter",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Crow_Funding_Application.CreateRequest",
+						"name": "_newRequest",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getContractBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "requestAddress",
+						"type": "address"
+					}
+				],
+				"name": "getRequest",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "requestDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "receiverAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amountNeeded",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAmountReceived",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "noOfVotesAcquired",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "requestCounter",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Crow_Funding_Application.CreateRequest",
+						"name": "request",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "makePayment",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "requestDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "receiverAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amountNeeded",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isAmountReceived",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "noOfVotesAcquired",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "requestCounter",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Crow_Funding_Application.CreateRequest",
+						"name": "_winner",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "voteTo",
+						"type": "address"
+					}
+				],
+				"name": "voteRequests",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Crowd_Funding.sol": "Crow_Funding_Application"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Crowd_Funding.sol": {
+			"keccak256": "0xfcd431a62fb918e6790f5cea1002343ff04415b79f1020608bcd54e70f9eccc6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4a767fabd97de9f2d994e9ac5b08317539a230b8caa9101b8ef8282dce3a14f4",
+				"dweb:/ipfs/QmQmRvH58rdHVK5yaQkFVs614uE3iXS8c43s5g6SRFSVHK"
+			]
+		}
+	},
+	"version": 1
+}

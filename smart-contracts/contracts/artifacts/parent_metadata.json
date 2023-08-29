@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "setInteger",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/4_practice.sol": "parent"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/4_practice.sol": {
+			"keccak256": "0x2912baebf45b776fc462cd936a30974aa0c2075a3438b654cae6a8da66da682c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://11357885aa3b5dcb3eff7719cf025f9511378202d2c9e8f8f6771f1a5fa664d5",
+				"dweb:/ipfs/QmWnoV9TpT8HrjEyQZZafV5kukpCiTwH6DeSkkEx2ffJyC"
+			]
+		}
+	},
+	"version": 1
+}

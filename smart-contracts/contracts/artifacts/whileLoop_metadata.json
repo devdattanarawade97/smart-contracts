@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "logBlockNumbers",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getBlocknumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/4_practice.sol": "whileLoop"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/4_practice.sol": {
+			"keccak256": "0x2cfed75139a822ca9f2d8e24f88695cb3aefdb1a8c7bdf26c7a2d0b40600abd4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://08ce4bf7743824d176b6bedd25b1c89f35fbd812b28e070f085e600abff5f579",
+				"dweb:/ipfs/QmTdmBVPjYpJiQxx2t4rds2FCqJhk3ZnoBRSMqYyTtb5VL"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sellerAddress",
+						"type": "address"
+					}
+				],
+				"name": "getSellerBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "sellerAddress",
+						"type": "address"
+					}
+				],
+				"name": "transferFundToSeller",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/4_practice.sol": "order"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/4_practice.sol": {
+			"keccak256": "0xe3aa2a161b08653110f08e074ea26f024801455fd77d740474a50388a0925975",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e7314ce99a6169313520468fc64a6786218e7dee3796f5c8348f0c12a0a66b65",
+				"dweb:/ipfs/Qmbp93aV2TNk7Yqo31HWdUhrkXFXS3TzXCi8ZEmink11vA"
+			]
+		}
+	},
+	"version": 1
+}
