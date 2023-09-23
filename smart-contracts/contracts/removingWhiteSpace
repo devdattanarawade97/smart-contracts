@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.4.0 <0.9.0;
+
+contract  removingWhiteSpace {
+
+//Removing white spaces from a string
+    function removeSpace(string memory x) public pure returns (string memory){
+     
+       bytes memory xbytes=bytes(x);
+          bytes memory stringWithoutSpace=new bytes(xbytes.length);
+
+       for(uint i=0;i<stringWithoutSpace.length;i++){
+
+
+           if(xbytes[i]!=" "){
+               stringWithoutSpace[i]=xbytes[i];
+           }
+       }
+
+       return string(stringWithoutSpace);
+
+
+    }
+    
+}
