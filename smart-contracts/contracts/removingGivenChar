@@ -1,0 +1,28 @@
+
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.8 <0.9;
+
+
+contract removingGivenChar {
+
+
+      function countOccurance(string memory givenString , string memory givenChar) public pure returns(string memory){
+
+
+        bytes memory givenStringBytes= bytes(givenString);
+       bytes memory givenCharBytes= bytes(givenChar);
+          bytes memory removedCharString=new bytes(givenStringBytes.length);
+   
+        for(uint i=0;i<givenStringBytes.length;i++){
+            
+            if(givenStringBytes[i]!=givenCharBytes[0]){
+               removedCharString[i]=givenStringBytes[i];
+         
+            }
+
+        }
+
+
+        return  string(removedCharString);
+    }
+}
