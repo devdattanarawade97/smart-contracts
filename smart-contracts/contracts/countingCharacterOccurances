@@ -6,11 +6,11 @@ pragma solidity >=0.8 <0.9.0;
 contract countingCharacterOccurances {
 
 //Counting occurrences of a certain character
-    function countOccurance(string memory x , string memory y) public pure returns(uint){
+    function countOccurance(string memory givenString , string memory givenChar) public pure returns(uint){
 
 
-        bytes memory z= bytes(x);
-       bytes memory m= bytes(y);
+        bytes memory z= bytes(givenString);
+       bytes memory m= bytes(givenChar);
         uint count=0;
         for(uint i=0;i<z.length;i++){
             
