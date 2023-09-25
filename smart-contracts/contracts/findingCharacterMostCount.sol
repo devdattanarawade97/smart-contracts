@@ -7,7 +7,7 @@ contract  findingCharacterMostCount {
     mapping (bytes1=>uint) charCount;
        mapping (bytes1=>bool) charCheck;
 
-//Removing white spaces from a string
+
     function find(string memory givenString) public  returns (uint){
      
        bytes memory bytesGivenString=bytes(givenString);
